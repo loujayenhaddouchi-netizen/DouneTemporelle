@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- العنوان الرئيسي -->
+
+        <TextView
+            android:id="@+id/txt_titre_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOUANE TEMPORELLE"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#17365D"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- اسم المسافر -->
+
+        <TextView
+            android:id="@+id/txt_nom_lh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom du voyageur"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edt_nom_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez votre nom"
+            android:inputType="textPersonName"/>
+
+        <!-- سنة الولادة -->
+
+        <TextView
+            android:id="@+id/txt_naissance_lh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Année de naissance"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edt_naissance_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Exemple : 1990"
+            android:inputType="number"
+            android:maxLength="4"/>
+
+        <!-- سنة الوجهة -->
+
+        <TextView
+            android:id="@+id/txt_destination_lh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Année de destination"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edt_destination_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Exemple : 2050"
+            android:inputType="number"
+            android:maxLength="4"/>
+
+        <!-- سبب السفر -->
+
+        <TextView
+            android:id="@+id/txt_motif_lh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Motif du voyage"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_motif_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_tourisme_lh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tourisme"/>
+
+            <RadioButton
+                android:id="@+id/rb_modification_lh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modification du passé"/>
+
+            <RadioButton
+                android:id="@+id/rb_fuite_lh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fuite"/>
+
+        </RadioGroup>
+
+        <!-- زر فحص الملف -->
+
+        <Button
+            android:id="@+id/btn_inspecter_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inspecter le profil"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

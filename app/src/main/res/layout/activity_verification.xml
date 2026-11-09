@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Conteneur principal : organisation horizontale de l'écran -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#F4F6FA">
+
+    <!-- Partie gauche : image occupant 30 % de l'écran -->
+    <ImageView
+        android:id="@+id/imgPasseport_lh"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:src="@android:drawable/ic_menu_myplaces"
+        android:scaleType="centerInside"
+        android:contentDescription="Illustration du passeport temporel"
+        android:background="#E3EAF5"
+        android:padding="12dp"/>
+
+    <!-- Partie droite : informations occupant 70 % de l'écran -->
+    <RelativeLayout
+        android:id="@+id/layoutInformations_lh"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:padding="20dp"
+        android:background="#FFFFFF">
+
+        <!-- Titre de l'écran de vérification -->
+        <TextView
+            android:id="@+id/txtTitre_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PASSEPORT TEMPOREL"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#303F9F"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- Libellé du nom du voyageur -->
+        <TextView
+            android:id="@+id/txtLabelNom_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitre_lh"
+            android:text="Nom du voyageur"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#555555"/>
+
+        <!-- Affichage du nom reçu depuis MainActivity -->
+        <TextView
+            android:id="@+id/txtNom_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtLabelNom_lh"
+            android:text="Nom"
+            android:textSize="18sp"
+            android:textColor="#303F9F"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Libellé de l'âge temporel -->
+        <TextView
+            android:id="@+id/txtLabelAge_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNom_lh"
+            android:text="Âge temporel"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#555555"/>
+
+        <!-- Affichage de l'âge temporel calculé en Java -->
+        <TextView
+            android:id="@+id/txtAge_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtLabelAge_lh"
+            android:text="60 ans"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#008577"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Libellé du motif du voyage -->
+        <TextView
+            android:id="@+id/txtLabelMotif_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtAge_lh"
+            android:text="Motif du voyage"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#555555"/>
+
+        <!-- Affichage  du motif reçu depuis MainActivity -->
+        <TextView
+            android:id="@+id/txtMotif_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtLabelMotif_lh"
+            android:text="Tourisme"
+            android:textSize="18sp"
+            android:textColor="#303F9F"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- Bouton yapprouvi le voyage -->
+        <Button
+            android:id="@+id/btnApprouver_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtMotif_lh"
+            android:text="Approuver le saut temporel"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2E9D62"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Bouton  yrefusi le voyage -->
+        <Button
+            android:id="@+id/btnRefuser_lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnApprouver_lh"
+            android:text="Refuser (Risque de paradoxe)"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D94343"
+            android:layout_marginTop="15dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4F6FA">
-    //bch nadhmou lescomposents de l'interface taht badhom
+ <!--bch nadhmou lescomposents de l'interface taht badhom-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         android:padding="24dp">
 
         <!-- titre de l'appli -->
-//affichage mtaa texte fixe a l'ecran
+<!--affichage mtaa texte fixe a l'ecran-->
         <TextView
             android:id="@+id/txt_titre_lh"
             android:layout_width="match_parent"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:text="Nom du voyageur"
             android:textSize="16sp"/>
-//modification du nom
+<!--modification du nom-->
         <EditText
             android:id="@+id/edt_nom_lh"
             android:layout_width="match_parent"
@@ -87,25 +87,25 @@
             android:text="Motif du voyage"
             android:layout_marginTop="20dp"
             android:textSize="16sp"/>
-//fiha des choix wel utillisateur yanjem yekhtar ken kaaba
+<!--fiha des choix wel utillisateur yanjem yekhtar ken kaaba-->
         <RadioGroup
             android:id="@+id/rg_motif_lh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-//choix1
+<!--choix1-->
             <RadioButton
                 android:id="@+id/rb_tourisme_lh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tourisme"/>
-//choix2
+<!--choix2-->
             <RadioButton
                 android:id="@+id/rb_modification_lh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Modification du passé"/>
-//choix3
+<!--choix3-->
             <RadioButton
                 android:id="@+id/rb_fuite_lh"
                 android:layout_width="wrap_content"
@@ -122,7 +122,7 @@
             android:layout_height="wrap_content"
             android:text="Inspecter le profil"
             android:layout_marginTop="30dp"/>
-//baed declaration linearlayout principale yetsaker
+<!--baed declaration linearlayout principale yetsaker-->
     </LinearLayout>
 
 </ScrollView>

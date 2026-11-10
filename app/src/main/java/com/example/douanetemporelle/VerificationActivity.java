@@ -72,17 +72,18 @@ public class VerificationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_verification);
 
         // Association mta composants Java maa identifiants XML
-        tvNom = findViewById(R.id.txtNom);
-        tvAge = findViewById(R.id.txtAge);
-        tvMotif = findViewById(R.id.txtMotif);
 
-        btnApprouver = findViewById(R.id.btnApprouver);
-        btnRefuser = findViewById(R.id.btnRefuser);
 
+        tvNom = findViewById(R.id.txtNom_lh);
+        tvAge = findViewById(R.id.txtAge_lh);
+        tvMotif = findViewById(R.id.txtMotif_lh);
+
+        btnApprouver = findViewById(R.id.btnApprouver_lh);
+        btnRefuser = findViewById(R.id.btnRefuser_lh);
         // Récupération mtaa l'Intent envoyé par MainActivity
         Intent intent = getIntent();
 
-        // Construction des clés personnalisées à partir du matricule.
+        // Construction des clés personnalisées ml matricule.
         String cleNom =
                 creerCleExtra(MATRICULE_MEMBRE, "NOM_VOYAGEUR");
 

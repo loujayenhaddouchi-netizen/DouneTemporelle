@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutResult"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#4CAF50">
+
+    <!-- 1. Message du verdict -->
+    <TextView
+        android:id="@+id/txtResultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bon voyage !"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- 2. Bouton nouveau voyageur -->
+    <Button
+        android:id="@+id/btnNouveau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nouveau voyageur"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
